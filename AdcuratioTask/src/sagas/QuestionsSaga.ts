@@ -10,11 +10,6 @@ export function* QuestionsSaga(api: any, action: any): SagaIterator {
       routeName: action?.payload?.name,
       endReached: action?.payload?.endReached,
     };
-    console.log(
-      response.data,
-      'response.dataresponse.dataresponse.dataresponse.data',
-    );
-
     if (response.status === 200) {
       yield put(QuestionsRedux.actions.getAllQuestionsSuccess(data));
     } else {

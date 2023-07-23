@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     flexDirection: 'row',
     flex: 1,
-    borderColor: Colors.PrimusGreyColor,
+    borderColor: Colors.PrimaryGreyColor,
     borderWidth: 1,
   },
   questionNumber: {
