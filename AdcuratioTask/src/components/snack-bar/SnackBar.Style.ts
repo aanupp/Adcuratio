@@ -4,7 +4,7 @@ import Colors from '../../resources/Colors';
 const styles = StyleSheet.create({
   SnackBarContainter: {
     position: 'absolute',
-    backgroundColor: Colors.primaryThemeColor,
+    backgroundColor: Colors.reddishPinkColor,
     flexDirection: 'row',
     alignItems: 'center',
     left: 0,
@@ -23,6 +23,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: 'Comfortaa-Light',
     flex: 1,
+  },
+  snacBarErrorImage: {
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
+    marginRight: 10,
+    tintColor: Colors.primaryThemeColor,
   },
 });
 

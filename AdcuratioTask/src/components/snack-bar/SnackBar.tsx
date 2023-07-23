@@ -29,22 +29,22 @@ function SnackBar(props: ISnackBarProps) {
     <View
       style={[
         styles.SnackBarContainter,
-        {backgroundColor: props?.color ? props?.color : null},
+        {
+          backgroundColor: props?.color
+            ? props?.color
+            : styles.SnackBarContainter.backgroundColor,
+        },
       ]}>
-      <Image
-        source={props?.source}
-        style={{
-          width: 20,
-          height: 20,
-          resizeMode: 'contain',
-          marginRight: 10,
-        }}
-      />
+      <Image source={props?.source} style={styles.snacBarErrorImage} />
       <Text
         numberOfLines={1}
         style={[
           styles.SnackBarMessage,
-          {color: props?.textColor ? props?.textColor : null},
+          {
+            color: props?.textColor
+              ? props?.textColor
+              : styles.SnackBarMessage.color,
+          },
         ]}>
         {props.message}
       </Text>

@@ -95,8 +95,8 @@ const Questions = props => {
       <SnackBar
         showSnackBar={errorMessage ? true : false}
         message={errorMessage}
-        color={Colors.quaternaryThemeColor}
-        textColor={Colors.reddishPinkColor}
+        color={Colors.reddishPinkColor}
+        textColor={Colors.primaryThemeColor}
         source={MediaAssets.ic_errormark}
         removeErrorState={() => {
           setQuestionsState({
